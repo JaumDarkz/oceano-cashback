@@ -1,3 +1,146 @@
 .container {
-  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  .leftSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logoContainer {
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+    }
+
+    .loginContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .contentContainer {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        .title {
+          font-size: 32px;
+          font-weight: 600;
+        }
+
+        .info {
+          color: var(--gray);
+        }
+
+        .googleButton {
+          display: flex;
+          padding: 8px 12px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          flex: 1 0 0;
+          align-self: stretch;
+          box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07);
+          border: 1px solid var(--border);
+          border-radius: 7px;
+          transition: 0.3s;
+
+          &:hover {
+            cursor: pointer;
+            background: rgb(233, 233, 233);
+          }
+        }
+
+        .orContainer {
+          width: 100%;
+          display: flex;
+          align-items: center;
+
+          .line {
+            width: 100%;
+            height: 1px;
+            background: var(--line);
+          }
+
+          .or {
+            padding: 0px 10px;
+            color: var(--gray);
+            font-size: 14px;
+          }
+        }
+
+        .inputsContainer {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .optionsContainer {
+          
+        }
+
+        .loginButton {
+          background: var(--blue);
+          width: 100%;
+          text-align: center;
+          padding: 10px 0px;
+          color: white;
+          border-radius: 6px;
+          transition: 0.3s;
+
+          &:hover {
+            cursor: pointer;
+            filter: brightness(1.2);
+          }
+        }
+
+        .registerCall {
+          color: var(--gray);
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 16px;
+          letter-spacing: -0.13px;
+
+          :is(span) {
+            color: var(--blue);
+            cursor: pointer;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 550;
+            line-height: 20px;
+            letter-spacing: -0.02px;
+          }
+        }
+      }
+    }
+
+    .legalContainer {
+      width: 100%;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.05px;
+      color: var(--gray);
+    }
+  }
+
+  .rightSide {
+    width: 50%;
+    background-image: url("../../../public/assets/images/pinkbluebg.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 }

@@ -25,7 +25,7 @@ const LoginPage = () => {
         <div className={styles.loginContainer}>
           <div className={styles.contentContainer}>
             <div className={styles.title}>
-              Entrar na Conta
+              Entrar na conta
             </div>
 
             <div className={styles.info}>
@@ -83,7 +83,7 @@ const LoginPage = () => {
             </div>
 
             <div className={styles.registerCall}>
-              Não é um membro? <span>Criar uma conta</span>
+              Não é um membro? <span onClick={() => window.open('/register', '_self')}>Criar uma conta</span>
             </div>
           </div>
         </div>
