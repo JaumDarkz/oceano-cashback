@@ -1,0 +1,24 @@
+:root {
+  --blue: #1751D0;
+  --gray: #4F4D55;
+  --green: #21A335;
+  --yellow: #FBBC04;
+  --red: #EA4335;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
