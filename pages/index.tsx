@@ -1,6 +1,11 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 
 export default function Home () {
+  useEffect(() => {
+    window.open('/login', '_self')
+  }, [])
+
   return (
     <>
       <Head>

@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import LoginPage from '@/components/Auth/LoginPage'
+
 export default function Login () {
   return (
     <>
@@ -9,6 +11,8 @@ export default function Login () {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <LoginPage />
     </>
   )
 }
