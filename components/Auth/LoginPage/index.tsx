@@ -7,9 +7,11 @@ import styles from './styles.module.scss'
 
 import logo from '@/public/assets/brand/bluelogo.svg'
 import google from '@/public/assets/icons/google.svg'
+import erroricon from '@/public/assets/icons/error.svg'
 
 const LoginPage = () => {
   const [isChecked, setIsChecked] = useState(false)
+  const [isError, setIsError] = useState(true)
 
   const handleChange = () => {
     setIsChecked(!isChecked)
@@ -19,7 +21,7 @@ const LoginPage = () => {
     <div className={styles.container}>
       <div className={styles.leftSide}>
         <div className={styles.logoContainer}>
-          <Image src={logo} alt='Logo' />
+          <Image src={logo} alt='Logo' className={styles.logo} />
         </div>
 
         <div className={styles.loginContainer}>
@@ -57,9 +59,33 @@ const LoginPage = () => {
                 <TextInput placeholder='E-mail' password={false} />
               </div>
 
+              {isError &&
+                <>
+                  <div className={styles.emailErrorIcon}>
+                    <Image src={erroricon} alt='Error icon' />
+                  </div>
+
+                  <div className={styles.emailError}>
+                    Endereço de e-mail inválido
+                  </div>
+                </>
+              }
+
               <div className={styles.passwordInput}>
                 <TextInput placeholder='Senha' password={true} />
               </div>
+
+              {isError &&
+                <>
+                  <div className={styles.passErrorIcon}>
+                    <Image src={erroricon} alt='Error icon' />
+                  </div>
+
+                  <div className={styles.passError}>
+                    Senha inválida
+                  </div>
+                </>
+              }
             </div>
 
             <div className={styles.optionsContainer}>
