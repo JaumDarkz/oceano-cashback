@@ -14,35 +14,37 @@ const RedefinePasswordPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.logoContainer}>
-        <Image src={logo} alt='Logo' />
+        <Image src={logo} alt='Logo' className={styles.logo} />
       </div>
 
       {currentPage == 'email' ?
         <>
           <div className={styles.emailContainer}>
-            <div className={styles.title}>
-              Redefina sua senha
-            </div>
-
-            <div className={styles.description}>
-              Não tenha medo. Enviaremos um e-mail com instruções para redefinir sua senha.
-            </div>
-
-            <div className={styles.input}>
-              <TextInput password={false} placeholder='E-mail' />
-            </div>
-
-            <div className={styles.button}>
-              Redefinir senha
-            </div>
-
-            <div className={styles.backLogin}>
-              <div className={styles.arrow}>
-                <Image src={arrow} alt='Back' />
+            <div className={styles.contentContainer}>
+              <div className={styles.title}>
+                Redefina sua senha
               </div>
 
-              <div className={styles.text}>
-                Volte ao login
+              <div className={styles.description}>
+                Não tenha medo. Enviaremos um e-mail com instruções para redefinir sua senha.
+              </div>
+
+              <div className={styles.input}>
+                <TextInput password={false} placeholder='E-mail' />
+              </div>
+
+              <div className={styles.button}>
+                Redefinir senha
+              </div>
+
+              <div className={styles.backLogin}>
+                <div className={styles.arrow}>
+                  <Image src={arrow} alt='Back' className={styles.icon} />
+                </div>
+
+                <div className={styles.text}>
+                  Volte ao login
+                </div>
               </div>
             </div>
           </div>
