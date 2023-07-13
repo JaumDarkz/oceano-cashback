@@ -99,12 +99,12 @@ const LoginPage = () => {
                 </div>
               </div>
 
-              <div className={styles.forgive}>
+              <div className={styles.forgive} onClick={() => window.open('/redefine', '_self')}>
                 Esqueceu?
               </div>
             </div>
 
-            <div className={styles.loginButton}>
+            <div className={styles.loginButton} onClick={() => window.open('/discounts', '_self')}>
               Login
             </div>
 

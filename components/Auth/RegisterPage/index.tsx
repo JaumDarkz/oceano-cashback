@@ -70,7 +70,7 @@ const RegisterPage = () => {
               
             </div>
 
-            <div className={styles.loginButton} onClick={() => window.open('/login', '_self')}>
+            <div className={styles.loginButton} onClick={() => window.open('/discounts', '_self')}>
               Criar conta
             </div>
 
