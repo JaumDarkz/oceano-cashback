@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+  display: flex;
+  border: solid 1px #DCDCDE;
+  padding: 10px 0px;
+  border-radius: 8px;
+
+  .HTMLinput {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    padding: 0px 0px 0px 10px;
+  }
+}

@@ -1,0 +1,109 @@
+import Image from 'next/image'
+import { useState } from 'react'
+
+import styles from './styles.module.scss'
+
+import logo from '@/public/assets/brand/whitelogo.svg'
+import magnifier from '@/public/assets/icons/magnifier.svg'
+import cart from '@/public/assets/icons/cart.svg'
+import profilephoto from '@/public/assets/images/profilephoto.svg'
+import profileicon from '@/public/assets/icons/profile.svg'
+import pointsicon from '@/public/assets/icons/points.svg'
+import logouticon from '@/public/assets/icons/logout.svg'
+
+const Navbar = () => {
+  const [selectedOption, setSelectedOption] = useState('discounts')
+  const [dropdown, setDropdown] = useState(false)
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.logo}>
+        <Image src={logo} alt='Logo' />
+      </div>
+
+      <div className={styles.optionsContainer}>
+        <div
+          className={
+            selectedOption == 'discounts'
+              ? styles.selectedOption
+              : styles.option
+          }
+          onClick={() => setSelectedOption('discounts')}
+        >
+          Descontos
+        </div>
+
+        <div
+          className={
+            selectedOption == 'about' ? styles.selectedOption : styles.option
+          }
+          onClick={() => setSelectedOption('about')}
+        >
+          Sobre
+        </div>
+      </div>
+
+      <div className={styles.searchBar}>
+        <input type='text' className={styles.HTMLinput} />
+
+        <div className={styles.image}>
+          <Image src={magnifier} alt='Search' />
+        </div>
+      </div>
+
+      <div className={styles.userContainer}>
+        <div className={styles.cart}>
+          <Image src={cart} alt='Cart' />
+        </div>
+
+        <div className={styles.profile} onClick={() => setDropdown(!dropdown)}>
+          <div className={styles.photo}><Image src={profilephoto} alt='Profile photo' /></div>
+
+          <div className={styles.infoContainer}>
+            <div className={styles.name}>Vinicius</div>
+
+            <div className={styles.points}>Pts: {80000}</div>
+          </div>
+        </div>
+
+        {dropdown &&
+          <div className={styles.dropdownContainer}>
+            <div className={styles.option} onClick={() => window.open('/profile', '_self')}>
+              <div className={styles.image}>
+                <Image src={profileicon} alt='Profile'/>
+              </div>
+
+              <div className={styles.text}>
+                Perfil
+              </div>
+            </div>
+
+            <div className={styles.option} onClick={() => window.open('/points', '_self')}>
+              <div className={styles.image}>
+                <Image src={pointsicon} alt='Profile'/>
+              </div>
+
+              <div className={styles.text}>
+                Pontos
+              </div>
+            </div>
+
+            <div className={styles.line} />
+
+            <div className={styles.option} onClick={() => window.open('/login', '_self')}>
+              <div className={styles.image}>
+                <Image src={logouticon} alt='Profile'/>
+              </div>
+
+              <div className={styles.text}>
+                Desconectar
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  )
+}
+
+export default Navbar
