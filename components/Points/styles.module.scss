@@ -1,3 +1,78 @@
 .container {
-  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .contentContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    @media (max-height: 800px) {
+      padding: 10px 0px;
+      gap: 5px;
+    }
+
+    .profileContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      @media (max-height: 800px) {
+        gap: 5px;
+      }
+
+      .name {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        @media (max-height: 800px) {
+          font-size: 22px;
+        }
+      }
+
+      .points {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: rgba(10, 9, 11, 0.50);
+
+        @media (max-height: 800px) {
+          font-size: 18px;
+        }
+
+        :is(span) {
+          color: var(--blue);
+        }
+      }
+    }
+
+    .historyContainer {
+      display: flex;
+      padding: 0px 50px 0px 50px;
+      gap: 40px;
+
+      .pointsHistory {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .label {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+  }
 }

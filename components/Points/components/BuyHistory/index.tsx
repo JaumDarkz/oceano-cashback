@@ -9,7 +9,7 @@ import denied from '@/public/assets/badges/denied.svg'
 import backarrow from '@/public/assets/pagination/backarrow.svg'
 import nextarrow from '@/public/assets/pagination/nextarrow.svg'
 
-const PointsHistory = () => {
+const BuyHistory = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const itemsPerPage = 8
 
@@ -79,4 +79,4 @@ const PointsHistory = () => {
   )
 }
 
-export default PointsHistory
+export default BuyHistory

@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import Navbar from '../Navbar'
 import PointsHistory from './components/PointsHistory'
+import BuyHistory from './components/BuyHistory'
 
 import styles from './styles.module.scss'
 
@@ -17,7 +18,7 @@ const PointsPage = () => {
       <div className={styles.contentContainer}>
         <div className={styles.profileContainer}>
           <div className={styles.photo}>
-            <Image width={140} src={photo} alt='Profile photo' />
+            <Image width={120} src={photo} alt='Profile photo' />
           </div>
 
           <div className={styles.name}>
@@ -25,7 +26,7 @@ const PointsPage = () => {
           </div>
 
           <div className={styles.points}>
-            Você possui: {80000} PTS
+            Você possui: <span>{80000} PTS</span>
           </div>
         </div>
 
@@ -46,7 +47,7 @@ const PointsPage = () => {
             </div>
 
             <div className={styles.history}>
-              <PointsHistory />
+              <BuyHistory />
             </div>
           </div>
         </div>
