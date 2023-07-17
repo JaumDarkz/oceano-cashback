@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import styles from './styles.module.scss'
 
@@ -12,8 +12,18 @@ import pointsicon from '@/public/assets/icons/points.svg'
 import logouticon from '@/public/assets/icons/logout.svg'
 
 const Navbar = () => {
-  const [selectedOption, setSelectedOption] = useState('discounts')
+  const [selectedOption, setSelectedOption] = useState('')
   const [dropdown, setDropdown] = useState(false)
+
+  useEffect(() => {
+    const currentUrl = window.location.href
+
+    if (currentUrl.includes('discounts')) {
+      setSelectedOption('discounts')
+    } else if (currentUrl.includes('about')) {
+      setSelectedOption('about')
+    }
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -28,7 +38,7 @@ const Navbar = () => {
               ? styles.selectedOption
               : styles.option
           }
-          onClick={() => setSelectedOption('discounts')}
+          onClick={() => {setSelectedOption('discounts'); window.open('/discounts', '_self')}}
         >
           Descontos
         </div>
@@ -37,7 +47,8 @@ const Navbar = () => {
           className={
             selectedOption == 'about' ? styles.selectedOption : styles.option
           }
-          onClick={() => setSelectedOption('about')}
+          // eslint-disable-next-line semi
+          onClick={() => {setSelectedOption('about'); window.open('/about', '_self')}}
         >
           Sobre
         </div>
