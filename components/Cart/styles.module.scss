@@ -8,6 +8,17 @@
     width: calc(100% - 400px);
     height: 100%;
     background: rgba(0, 0, 0, 0.534);
+    animation: openbgAnimation ease-in 0.7s;
+
+    @keyframes openbgAnimation {
+      from {
+        background: transparent;
+      }
+
+      to {
+        background: rgba(0, 0, 0, 0.534);
+      }
+    }
   }
 
   .cartContainer {
@@ -16,6 +27,17 @@
     background: white;
     padding: 35px;
     z-index: 10;
+    animation: openAnimation ease-in 0.5s;
+
+    @keyframes openAnimation {
+      from {
+        transform: translateX(400px);
+      }
+
+      to {
+        transform: translateX(0px);
+      }
+    }
 
     .close {
       display: flex;
@@ -52,7 +74,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
-        line-height: 24px; 
+        line-height: 24px;
       }
     }
 
