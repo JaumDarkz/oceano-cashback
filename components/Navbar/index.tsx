@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
 
         <div className={styles.userContainer}>
-          <div className={styles.cart} onClick={() => setCartOpen(!cartOpen)}>
+          <div className={styles.cart} onClick={() => {setCartOpen(!cartOpen); setDropdown(false)}}>
             <Image src={cart} alt='Cart' />
           </div>
 
