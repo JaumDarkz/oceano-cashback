@@ -64,13 +64,6 @@ const Cart = ({onStateChange}: CartState) => {
               onQuantityChange={(newQuantity) => handleQuantityChange(0, newQuantity)}
               viewProduct={false}
             />
-            <Product
-              productName="Desconto"
-              info="Obtenha desconto!"
-              value={200 * quantities[1]}
-              onQuantityChange={(newQuantity) => handleQuantityChange(1, newQuantity)}
-              viewProduct={false}
-            />
           </div>
 
           <div className={styles.subtotal}>
@@ -100,7 +93,7 @@ const Cart = ({onStateChange}: CartState) => {
               </div>
 
               <div className={styles.close}>
-              <Image src={close} alt="Close" className={styles.image} onClick={() => setConfirmPopup(false)} />
+              <Image src={close} alt="Fechar" className={styles.image} onClick={() => setConfirmPopup(false)} />
               </div>
             </div>
 
@@ -114,14 +107,6 @@ const Cart = ({onStateChange}: CartState) => {
                 info="Obtenha desconto!"
                 value={200 * quantities[0]}
                 onQuantityChange={(newQuantity) => handleQuantityChange(0, newQuantity)}
-                viewProduct={true}
-              />
-
-              <Product
-                productName="Desconto"
-                info="Obtenha desconto!"
-                value={200 * quantities[1]}
-                onQuantityChange={(newQuantity) => handleQuantityChange(1, newQuantity)}
                 viewProduct={true}
               />
             </div>

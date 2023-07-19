@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .contentContainer {
+    height: 100%;
+    display: flex;
+
+    .sidebarContainer {
+      height: calc(100vh - 100px);
+      position: fixed;
+    }
+
+    .commerceContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 240px;
+      padding: 35px;
+
+      .searchContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .leftContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+
+          .searchResult {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            span {
+              &:first-child {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+
+              &:last-child {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                color: var(--blue);
+              }
+            }
+          }
+
+          .filtersContainer {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            .filters {
+              display: flex;
+              gap: 10px;
+            }
+
+            .cleanFilters {
+              cursor: pointer;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 475;
+              line-height: 18px;
+              color: var(--blue);
+            }
+          }
+        }
+
+        .rightContainer {
+          .orderBy {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            .text {
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 475;
+              line-height: 20px; /* 142.857% */
+              letter-spacing: -0.05px;
+            }
+
+            .orderDropdown {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              border-radius: 6px;
+              border: 1px solid #E7E7E7;
+              padding: 8px 14px;
+
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 475;
+              line-height: 20px; /* 142.857% */
+              letter-spacing: -0.05px;
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              .arrow {
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
