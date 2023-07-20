@@ -5,6 +5,7 @@
   border-radius: 5px;
   background: #F1F1F1;
   padding: 2px 9px;
+  transition: 0.4s;
 
   .image {
     margin-top: 6px;
@@ -12,5 +13,6 @@
 
   &:hover {
     cursor: pointer;
+    background: #dfdfdf;
   }
 }

@@ -110,7 +110,7 @@ const Sidebar = () => {
             onChange={handleSliderChange}
             className={styles.slider}
           />
-          <div className={styles.value}>{sliderValue}</div>
+          <div className={styles.value}>{sliderValue} pts</div>
         </div>
       </div>
     </div>

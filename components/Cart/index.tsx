@@ -105,8 +105,8 @@ const Cart = ({onStateChange}: CartState) => {
               <Product
                 productName="Desconto"
                 info="Obtenha desconto!"
-                value={200 * quantities[0]}
-                onQuantityChange={(newQuantity) => handleQuantityChange(0, newQuantity)}
+                value={200 * quantities[1]}
+                onQuantityChange={(newQuantity) => handleQuantityChange(1, newQuantity)}
                 viewProduct={true}
               />
             </div>

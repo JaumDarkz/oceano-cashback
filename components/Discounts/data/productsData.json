@@ -1,0 +1,780 @@
+[
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 1",
+    "value": 50,
+    "discountValue": 20,
+    "description": "Descrição do Produto 1",
+    "starsValue": 4.5
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 3",
+    "value": 80,
+    "discountValue": 0,
+    "description": "Descrição do Produto 3",
+    "starsValue": 4.9
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 1",
+    "value": 50,
+    "discountValue": 20,
+    "description": "Descrição do Produto 1",
+    "starsValue": 4.5
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 3",
+    "value": 80,
+    "discountValue": 0,
+    "description": "Descrição do Produto 3",
+    "starsValue": 4.9
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },{
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  },
+  {
+    "image": "/assets/images/blackfriday.svg",
+    "productName": "Produto 2",
+    "value": 30,
+    "discountValue": 10,
+    "description": "Descrição do Produto 2",
+    "starsValue": 3.8
+  }
+]

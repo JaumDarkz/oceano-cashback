@@ -80,7 +80,7 @@ const Navbar = () => {
             <div className={styles.infoContainer}>
               <div className={styles.name}>Vinicius</div>
 
-              <div className={styles.points}>PTS: {80000}</div>
+              <div className={styles.points}>PTS: {80.029}</div>
             </div>
           </div>
 
