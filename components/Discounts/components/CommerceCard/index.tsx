@@ -22,7 +22,7 @@ const CommerceCard = ({image, productName, value, discountValue, description, st
   return (
     <>
       {buyPopup &&
-        <BuyPopup image={image} productName={productName} value={value} discountValue={discountValue} description={description} closeFunction={(closePopup) => setBuyPopup(closePopup)} />
+        <BuyPopup image={image} productName={productName} value={value} discountValue={discountValue} description={description} starsValue={starsValue} closeFunction={(closePopup) => setBuyPopup(closePopup)} />
       }
 
       <div className={styles.container}>

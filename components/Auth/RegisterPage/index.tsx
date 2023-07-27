@@ -13,6 +13,7 @@ const RegisterPage = () => {
   const [nameInputData, setNameInputData] = useState('')
   const [emailInputData, setEmailInputData] = useState('')
   const [passInputData, setPassInputData] = useState('')
+  const [isError, setIsError] = useState(true)
 
   return (
     <div className={styles.container}>
@@ -52,17 +53,41 @@ const RegisterPage = () => {
             </div>
 
             <div className={styles.inputsContainer}>
-              <div className={styles.nameInput}>
+              <div className={isError == false ? styles.nameInput : styles.nameInputError}>
                 <TextInput placeholder='Nome' password={false} inputData={(inputData:string) => setNameInputData(inputData)} />
               </div>
 
-              <div className={styles.emailInput}>
+              {isError &&
+                <>
+                  <div className={styles.nameError}>
+                    Erro nominal
+                  </div>
+                </>
+              }
+
+              <div className={isError == false ? styles.emailInput : styles.emailInputError}>
                 <TextInput placeholder='E-mail' password={false} inputData={(inputData:string) => setEmailInputData(inputData)} />
               </div>
 
-              <div className={styles.passwordInput}>
+              {isError &&
+                <>
+                  <div className={styles.emailError}>
+                    Endereço de e-mail inválido
+                  </div>
+                </>
+              }
+
+              <div className={isError == false ? styles.passwordInput : styles.passwordInputError}>
                 <TextInput placeholder='Senha' password={true} inputData={(inputData:string) => setPassInputData(inputData)} />
               </div>
+
+              {isError &&
+                <>
+                  <div className={styles.passError}>
+                    Senha inválida
+                  </div>
+                </>
+              }
             </div>
 
             <div className={styles.conditionContainer}>

@@ -58,31 +58,24 @@ const LoginPage = () => {
             </div>
 
             <div className={styles.inputsContainer}>
-              <div className={styles.emailInput}>
+              <div className={isError == false ? styles.emailInput : styles.emailInputError}>
                 <TextInput placeholder='E-mail' password={false} inputData={(inputData:string) => setEmailInputData(inputData)} />
               </div>
 
               {isError &&
                 <>
-                  <div className={styles.emailErrorIcon}>
-                    <Image src={erroricon} alt='Error icon' />
-                  </div>
-
                   <div className={styles.emailError}>
                     Endereço de e-mail inválido
                   </div>
                 </>
               }
 
-              <div className={styles.passwordInput}>
+              <div className={isError == false ? styles.passwordInput : styles.passwordInputError}>
                 <TextInput placeholder='Senha' password={true} inputData={(inputData:string) => setPassInputData(inputData)} />
               </div>
 
               {isError &&
                 <>
-                  <div className={styles.passErrorIcon}>
-                    <Image src={erroricon} alt='Error icon' />
-                  </div>
 
                   <div className={styles.passError}>
                     Senha inválida

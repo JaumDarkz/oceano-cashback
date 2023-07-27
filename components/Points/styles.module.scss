@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 
@@ -12,11 +11,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-
-    @media (max-height: 800px) {
-      padding: 10px 0px;
-      gap: 5px;
-    }
+    padding-top: 68px;
 
     .profileContainer {
       display: flex;
@@ -24,19 +19,11 @@
       align-items: center;
       gap: 10px;
 
-      @media (max-height: 800px) {
-        gap: 5px;
-      }
-
       .name {
         font-size: 30px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-
-        @media (max-height: 800px) {
-          font-size: 22px;
-        }
       }
 
       .points {
@@ -46,10 +33,6 @@
         line-height: normal;
         color: rgba(10, 9, 11, 0.50);
 
-        @media (max-height: 800px) {
-          font-size: 18px;
-        }
-
         :is(span) {
           color: var(--blue);
         }
@@ -58,8 +41,12 @@
 
     .historyContainer {
       display: flex;
-      padding: 0px 50px 0px 50px;
+      padding: 0px 0px 65px 0px;
       gap: 40px;
+
+      @media (max-width: 1400px) {
+        gap: 10px;
+      }
 
       .pointsHistory {
         display: flex;

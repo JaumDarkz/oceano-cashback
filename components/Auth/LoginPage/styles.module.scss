@@ -90,6 +90,16 @@
           flex-direction: column;
           gap: 20px;
 
+          .emailInputError {
+            outline: 1px solid #EA4335;
+            border-radius: 8px;
+          }
+
+          .passwordInputError {
+            outline: 1px solid #EA4335;
+            border-radius: 8px;
+          }
+
           .emailError {
             color: var(--red);
             position: absolute;
@@ -104,18 +114,6 @@
             margin-top: 103px;
             margin-left: 5px;
             font-size: 12px;
-          }
-
-          .emailErrorIcon {
-            position: absolute;
-            margin-top: 10px;
-            margin-left: 370px;
-          }
-
-          .passErrorIcon {
-            position: absolute;
-            margin-top: 70px;
-            margin-left: 315px;
           }
         }
 

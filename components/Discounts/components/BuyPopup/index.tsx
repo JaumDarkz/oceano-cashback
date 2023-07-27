@@ -6,6 +6,7 @@ import styles from './styles.module.scss'
 
 import close from '@/public/assets/icons/close.svg'
 import cart from '@/public/assets/icons/cart.svg'
+import star from '@/public/assets/icons/star.svg'
 
 interface PopupData {
   image: string,
@@ -13,11 +14,23 @@ interface PopupData {
   value: number,
   discountValue: number,
   description: string,
-  closeFunction: (closePopup: boolean) => void
+  starsValue: number
+  closeFunction: (closePopup: boolean) => void,
 }
 
-const BuyPopup = ({image, productName, value, discountValue, description, closeFunction}:PopupData) => {
+const BuyPopup = ({image, productName, value, discountValue, description, closeFunction, starsValue}:PopupData) => {
   const [closePopup, setClosePopup] = useState(false)
+  const [count, setCount] = useState(0)
+
+  const handleIncrement = () => {
+    setCount((prevCount) => prevCount + 1)
+  }
+
+  const handleDecrement = () => {
+    if (count > 0) {
+      setCount((prevCount) => prevCount - 1)
+    }
+  }
 
   const handleClose = () => {
     setClosePopup(true)
@@ -34,8 +47,20 @@ const BuyPopup = ({image, productName, value, discountValue, description, closeF
             <Image src={close} alt='Fechar' className={styles.image} />
           </div>
 
-          <div className={styles.title}>
-            {productName}
+          <div className={styles.titleAndStars}>
+            <div className={styles.title}>
+              {productName}
+            </div>
+
+            <div className={styles.stars}>
+              <div className={styles.image}>
+                <Image src={star} alt='Estrelas' />
+              </div>
+
+              <div className={styles.value}>
+                {starsValue}
+              </div>
+            </div>
           </div>
 
           <div className={styles.price}>
@@ -52,7 +77,23 @@ const BuyPopup = ({image, productName, value, discountValue, description, closeF
             {description}
           </div>
 
-          <div className={styles.buttonContainer}>
+          <div className={styles.buttonsContainer}>
+            <div className={styles.quantityContainer}>
+              <div className={styles.title}>
+                Quantidade
+              </div>
+
+              <div className={styles.quantity}>
+                <div className={styles.button} onClick={handleDecrement}>
+                  -
+                </div>
+                <div className={styles.count}>{count}</div>
+                <div className={styles.button} onClick={handleIncrement}>
+                  +
+                </div>
+              </div>
+            </div>
+
             <div className={styles.button}>
               <div className={styles.image}>
                 <Image src={cart} alt='Comprar' />

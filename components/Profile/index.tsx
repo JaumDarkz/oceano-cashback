@@ -1,13 +1,22 @@
 import Image from 'next/image'
+import { useState } from 'react'
 
 import Navbar from '../Navbar'
+import TextInput from '../Auth/Reusable/TextInput'
 
 import styles from './styles.module.scss'
 
 import photo from '@/public/assets/images/profilephoto.svg'
-import TextInput from '../Auth/Reusable/TextInput'
 
 const ProfilePage = () => {
+  const [nameInputData, setNameInputData] = useState('')
+  const [emailInputData, setEmailInputData] = useState('')
+  const [passInputData, setPassInputData] = useState('')
+
+  const [actualPassInputData, setActualPassInputData] = useState('')
+  const [newPassInputData, setNewPassInputData] = useState('')
+  const [againNewPassInputData, setAgainNewPassInputData] = useState('')
+
   return (
     <div className={styles.container}>
       <div className={styles.navbarContainer}>
@@ -33,7 +42,7 @@ const ProfilePage = () => {
               Nome
             </div>
 
-            <TextInput password={false} placeholder='Nome' />
+            <TextInput password={false} placeholder='Nome' inputData={(inputData) => setNameInputData(inputData)} />
           </div>
 
           <div className={styles.inputContainer}>
@@ -41,7 +50,7 @@ const ProfilePage = () => {
               E-mail
             </div>
 
-            <TextInput password={false} placeholder='E-mail' />
+            <TextInput password={false} placeholder='E-mail' inputData={(inputData) => setEmailInputData(inputData)} />
           </div>
 
           <div className={styles.inputContainer}>
@@ -49,7 +58,7 @@ const ProfilePage = () => {
               Celular
             </div>
 
-            <TextInput password={false} placeholder='Celular' />
+            <TextInput password={false} placeholder='Celular' inputData={(inputData) => setPassInputData(inputData)} />
           </div>
 
           <div className={styles.button}>
@@ -67,7 +76,7 @@ const ProfilePage = () => {
               Senha atual
             </div>
 
-            <TextInput password={true} placeholder='Senha atual' />
+            <TextInput password={true} placeholder='Senha atual' inputData={(inputData) => setActualPassInputData(inputData)} />
           </div>
 
           <div className={styles.inputContainer}>
@@ -75,7 +84,7 @@ const ProfilePage = () => {
               Nova senha
             </div>
 
-            <TextInput password={false} placeholder='Senha atual' />
+            <TextInput password={false} placeholder='Senha atual' inputData={(inputData) => setNewPassInputData(inputData)} />
           </div>
 
           <div className={styles.inputContainer}>
@@ -83,7 +92,7 @@ const ProfilePage = () => {
               Digite novamente a senha
             </div>
 
-            <TextInput password={false} placeholder='Senha atual' />
+            <TextInput password={false} placeholder='Senha atual' inputData={(inputData) => setAgainNewPassInputData(inputData)} />
           </div>
 
           <div className={styles.button}>
