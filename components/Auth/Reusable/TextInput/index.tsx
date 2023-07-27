@@ -1,61 +1,47 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import styles from './styles.module.scss'
 
 interface Data {
   placeholder: string
   password: boolean
+  inputData: (inputData: string) => void
 }
 
-const TextInput = ({ placeholder, password }: Data) => {
-  const [isChecked, setIsChecked] = useState(false)
-  const passInputRef = useRef<HTMLInputElement>(null)
+const TextInput = ({ placeholder, password, inputData }: Data) => {
+  const [showPassword, setShowPassword] = useState(false)
+  const [componentInputData, setComponentInputData] = useState('')
 
-  const handleChange = () => {
-    setIsChecked(!isChecked)
-  }
-
-  const verifyPassword = () => {
-    const passInput = passInputRef.current
-    if (passInput) {
-      const pass = passInput.value
-
-      const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/
-
-      if (regex.test(pass)) {
-        passInput.setCustomValidity('')
-      } else {
-        passInput.setCustomValidity(
-          'A senha deve ter pelo menos 8 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula e um número.'
-        )
-      }
-    }
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setComponentInputData(e.target.value)
+    inputData(e.target.value)
   }
 
   return (
     <div className={styles.container}>
       {password === true ? (
         <input
-          type={isChecked === true ? 'text' : 'password'}
+          type={showPassword ? 'text' : 'password'}
           placeholder={placeholder}
           className={styles.HTMLinput}
-          required
-          onInput={verifyPassword}
-          ref={passInputRef}
+          value={componentInputData}
+          onChange={handleChange}
         />
       ) : (
         <input
           type='text'
           placeholder={placeholder}
           className={styles.HTMLinput}
+          value={componentInputData}
+          onChange={handleChange}
         />
       )}
       {password === true ? (
-        <div className={`${styles.switch} ${isChecked ? styles.on : ''}`}>
+        <div className={`${styles.switch} ${showPassword ? styles.on : ''}`}>
           <input
             type='checkbox'
             id='toggleSwitch'
-            checked={isChecked}
-            onChange={handleChange}
+            checked={showPassword}
+            onChange={() => setShowPassword(!showPassword)}
           />
           <label htmlFor='toggleSwitch' className={styles.switchLabel}>
             <span className={styles.switchInner} />

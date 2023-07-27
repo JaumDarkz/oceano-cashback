@@ -8,14 +8,18 @@ import TextInput from '../Reusable/TextInput'
 import logo from '@/public/assets/brand/bluelogo.svg'
 import arrow from '@/public/assets/icons/backarrow.svg'
 import VerifyPassInput from '../Reusable/VerifyPassInput'
+import PassFormatter from '../Reusable/PassFormatter'
 
 const RedefinePasswordPage = () => {
-  const [currentPage, setCurrentPage] = useState('redefineComplete')
+  const [currentPage, setCurrentPage] = useState('chooseNewPass')
+  const [nameInputData, setNameInputData] = useState('')
+  const [emailInputData, setEmailInputData] = useState('')
+  const [passInputData, setPassInputData] = useState('')
 
   return (
     <div className={styles.container}>
       <div className={styles.logoContainer}>
-        <Image src={logo} alt='Logo' className={styles.logo} />
+        <Image src={logo} alt='Logo' className={styles.logo} onClick={() => window.open('/', '_self')}/>
       </div>
 
       {currentPage == 'email' ?
@@ -31,7 +35,7 @@ const RedefinePasswordPage = () => {
               </div>
 
               <div className={styles.input}>
-                <TextInput password={false} placeholder='E-mail' />
+                <TextInput password={false} placeholder='E-mail' inputData={(inputData:string) => setEmailInputData(inputData)} />
               </div>
 
               <div className={styles.button}>
@@ -62,11 +66,15 @@ const RedefinePasswordPage = () => {
             </div>
 
             <div className={styles.input}>
-              <TextInput password={true} placeholder='Nova senha' />
+              <TextInput password={true} placeholder='Nova senha' inputData={(inputData:string) => setPassInputData(inputData)} />
             </div>
 
             <div className={styles.input}>
               <VerifyPassInput placeholder='Senha novamente' />
+            </div>
+
+            <div className={styles.conditionContainer}>
+              <PassFormatter password={passInputData} />
             </div>
 
             <div className={styles.button}>

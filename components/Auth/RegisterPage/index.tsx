@@ -7,13 +7,12 @@ import styles from './styles.module.scss'
 
 import logo from '@/public/assets/brand/bluelogo.svg'
 import google from '@/public/assets/icons/google.svg'
+import PassFormatter from '../Reusable/PassFormatter'
 
 const RegisterPage = () => {
-  const [isChecked, setIsChecked] = useState(false)
-
-  const handleChange = () => {
-    setIsChecked(!isChecked)
-  }
+  const [nameInputData, setNameInputData] = useState('')
+  const [emailInputData, setEmailInputData] = useState('')
+  const [passInputData, setPassInputData] = useState('')
 
   return (
     <div className={styles.container}>
@@ -54,20 +53,20 @@ const RegisterPage = () => {
 
             <div className={styles.inputsContainer}>
               <div className={styles.nameInput}>
-                <TextInput placeholder='Nome' password={false} />
+                <TextInput placeholder='Nome' password={false} inputData={(inputData:string) => setNameInputData(inputData)} />
               </div>
 
               <div className={styles.emailInput}>
-                <TextInput placeholder='E-mail' password={false} />
+                <TextInput placeholder='E-mail' password={false} inputData={(inputData:string) => setEmailInputData(inputData)} />
               </div>
 
               <div className={styles.passwordInput}>
-                <TextInput placeholder='Senha' password={true} />
+                <TextInput placeholder='Senha' password={true} inputData={(inputData:string) => setPassInputData(inputData)} />
               </div>
             </div>
 
-            <div className={styles.optionsContainer}>
-              
+            <div className={styles.conditionContainer}>
+              <PassFormatter password={passInputData} />
             </div>
 
             <div className={styles.loginButton} onClick={() => window.open('/discounts', '_self')}>

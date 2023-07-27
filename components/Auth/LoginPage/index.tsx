@@ -12,6 +12,9 @@ import erroricon from '@/public/assets/icons/error.svg'
 const LoginPage = () => {
   const [isChecked, setIsChecked] = useState(false)
   const [isError, setIsError] = useState(true)
+  const [nameInputData, setNameInputData] = useState('')
+  const [emailInputData, setEmailInputData] = useState('')
+  const [passInputData, setPassInputData] = useState('')
 
   const handleChange = () => {
     setIsChecked(!isChecked)
@@ -56,7 +59,7 @@ const LoginPage = () => {
 
             <div className={styles.inputsContainer}>
               <div className={styles.emailInput}>
-                <TextInput placeholder='E-mail' password={false} />
+                <TextInput placeholder='E-mail' password={false} inputData={(inputData:string) => setEmailInputData(inputData)} />
               </div>
 
               {isError &&
@@ -72,7 +75,7 @@ const LoginPage = () => {
               }
 
               <div className={styles.passwordInput}>
-                <TextInput placeholder='Senha' password={true} />
+                <TextInput placeholder='Senha' password={true} inputData={(inputData:string) => setPassInputData(inputData)} />
               </div>
 
               {isError &&
@@ -99,7 +102,7 @@ const LoginPage = () => {
                 </div>
               </div>
 
-              <div className={styles.forgive} onClick={() => window.open('/redefine', '_self')}>
+              <div className={styles.forgive} onClick={() => window.open('/redefinepassword', '_self')}>
                 Esqueceu?
               </div>
             </div>

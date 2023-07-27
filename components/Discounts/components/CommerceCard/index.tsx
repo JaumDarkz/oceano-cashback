@@ -43,7 +43,7 @@ const CommerceCard = ({image, productName, value, discountValue, description, st
 
               {discountValue == 0 ? null :
                 <div className={styles.discountValue}>
-                  {discountValue} pts
+                  {discountValue}
                 </div>
               }
             </div>
