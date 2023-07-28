@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Navbar from '../Navbar';
 import Sidebar from './components/Sidebar';
 import CommerceCard from './components/CommerceCard';
+import Footer from '../Footer';
 
 import styles from './styles.module.scss';
 
@@ -150,6 +151,7 @@ const DiscountsPage = () => {
                   discountValue={cardData.discountValue}
                   description={cardData.description}
                   starsValue={cardData.starsValue}
+                  componentType={cardData.componentType}
                 />
               ))}
             </div>
@@ -167,6 +169,10 @@ const DiscountsPage = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={styles.footer}>
+        <Footer />
       </div>
     </div>
   )

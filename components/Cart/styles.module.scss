@@ -10,22 +10,6 @@
     background: rgba(0, 0, 0, 0.534);
     animation: openbgAnimation ease-in 0.5s;
     z-index: 10;
-
-    @keyframes openbgAnimation {
-      from {
-        background: transparent;
-        width: calc(100% + 400px);
-        transform: translateX(100%);
-        opacity: 0%;
-      }
-
-      to {
-        background: rgba(0, 0, 0, 0.534);
-        width: calc(100% + 400px);
-        transform: translateX(0%);
-        opacity: 100%;
-      }
-    }
   }
 
   .cartContainer {

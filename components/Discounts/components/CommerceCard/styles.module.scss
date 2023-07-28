@@ -9,7 +9,7 @@
   background: white;
   box-shadow: 0px 3px 7px -5px rgba(0, 0, 0, 0.15),
     0px 4px 12px 0px rgba(0, 0, 0, 0.05);
-  z-index: 1;
+  z-index: 0;
 
   .productImage {
     position: relative;
@@ -66,6 +66,21 @@
           line-height: 24px;
           color: #637381;
           text-decoration: line-through;
+        }
+
+        .couponValue {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          margin-left: -15px;
+
+          :is(span) {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+          }
         }
       }
 

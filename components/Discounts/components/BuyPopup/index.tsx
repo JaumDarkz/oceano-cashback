@@ -16,11 +16,13 @@ interface PopupData {
   description: string,
   starsValue: number
   closeFunction: (closePopup: boolean) => void,
+  componentType: string
 }
 
-const BuyPopup = ({image, productName, value, discountValue, description, closeFunction, starsValue}:PopupData) => {
+const BuyPopup = ({image, productName, value, discountValue, description, closeFunction, starsValue, componentType}:PopupData) => {
   const [closePopup, setClosePopup] = useState(false)
   const [count, setCount] = useState(0)
+  const [couponCount, setCouponCount] = useState(5000)
 
   const handleIncrement = () => {
     setCount((prevCount) => prevCount + 1)
@@ -29,6 +31,16 @@ const BuyPopup = ({image, productName, value, discountValue, description, closeF
   const handleDecrement = () => {
     if (count > 0) {
       setCount((prevCount) => prevCount - 1)
+    }
+  }
+
+  const handleCouponIncrement = () => {
+    setCouponCount((prevCount) => prevCount + 100)
+  }
+
+  const handleCouponDecrement = () => {
+    if (couponCount > 5000) {
+      setCouponCount((prevCount) => prevCount - 100)
     }
   }
 
@@ -65,12 +77,22 @@ const BuyPopup = ({image, productName, value, discountValue, description, closeF
 
           <div className={styles.price}>
             <div className={styles.value}>
-              {value} <span>pts</span>
+              {componentType == 'normal' ?
+                <>
+                  {value} <span>pts</span>
+                </>
+                :
+                <>
+                  ${value}
+                </>
+              }
             </div>
 
-            <div className={styles.discount}>
-              {discountValue} pts
-            </div>
+            {componentType == 'normal' ?
+              <div className={styles.discount}>
+                {discountValue} pts
+              </div>
+            : null}
           </div>
 
           <div className={styles.description}>
@@ -78,21 +100,43 @@ const BuyPopup = ({image, productName, value, discountValue, description, closeF
           </div>
 
           <div className={styles.buttonsContainer}>
-            <div className={styles.quantityContainer}>
-              <div className={styles.title}>
-                Quantidade
-              </div>
+            {componentType == 'normal' ?
+              <div className={styles.quantityContainer}>
+                <div className={styles.title}>
+                  Quantidade
+                </div>
 
-              <div className={styles.quantity}>
-                <div className={styles.button} onClick={handleDecrement}>
-                  -
-                </div>
-                <div className={styles.count}>{count}</div>
-                <div className={styles.button} onClick={handleIncrement}>
-                  +
+                <div className={styles.quantity}>
+                  <div className={styles.button} onClick={handleDecrement}>
+                    -
+                  </div>
+                  <div className={styles.count}>{count}</div>
+                  <div className={styles.button} onClick={handleIncrement}>
+                    +
+                  </div>
                 </div>
               </div>
-            </div>
+              :
+              <div className={styles.couponContainer}>
+                <div className={styles.text}>
+                  Pontuação define valor recebido
+                </div>
+
+                <div className={styles.quantity}>
+                  <div className={styles.button} onClick={handleCouponDecrement}>
+                    -
+                  </div>
+                  <div className={styles.count}>{couponCount} pts</div>
+                  <div className={styles.button} onClick={handleCouponIncrement}>
+                    +
+                  </div>
+                </div>
+
+                <div className={styles.text}>
+                  Mínimo de 5000 pts
+                </div>
+              </div>
+            }
 
             <div className={styles.button}>
               <div className={styles.image}>

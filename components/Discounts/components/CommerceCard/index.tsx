@@ -13,16 +13,24 @@ interface CardData {
   value: number,
   discountValue: number,
   description: string,
-  starsValue: number
+  starsValue: number,
+  componentType: string
 }
 
-const CommerceCard = ({image, productName, value, discountValue, description, starsValue}: CardData) => {
+const CommerceCard = ({image, productName, value, discountValue, description, starsValue, componentType}: CardData) => {
   const [buyPopup, setBuyPopup] = useState(false)
 
   return (
     <>
       {buyPopup &&
-        <BuyPopup image={image} productName={productName} value={value} discountValue={discountValue} description={description} starsValue={starsValue} closeFunction={(closePopup) => setBuyPopup(closePopup)} />
+        <BuyPopup
+        image={image}
+        productName={productName}
+        value={value} discountValue={discountValue}
+        description={description} starsValue={starsValue}
+        closeFunction={(closePopup) => setBuyPopup(closePopup)}
+        componentType={componentType}
+        />
       }
 
       <div className={styles.container}>
@@ -38,13 +46,21 @@ const CommerceCard = ({image, productName, value, discountValue, description, st
           <div className={styles.productInfo}>
             <div className={styles.points}>
               <div className={styles.value}>
-                <span>{value}</span> pts
+                <span>{componentType == 'coupon' ? '$' : null}{value} {componentType == 'coupon' ? '-' : null} </span> {componentType == 'normal' ? 'pts' : null}
               </div>
 
               {discountValue == 0 ? null :
-                <div className={styles.discountValue}>
-                  {discountValue}
-                </div>
+                <>
+                  {componentType == 'normal' ?
+                    <div className={styles.discountValue}>
+                      {discountValue}
+                    </div>
+                  :
+                    <div className={styles.couponValue}>
+                      <span>{discountValue}</span> pts
+                    </div>
+                  }
+                </>
               }
             </div>
 

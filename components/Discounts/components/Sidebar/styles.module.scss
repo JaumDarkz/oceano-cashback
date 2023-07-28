@@ -76,6 +76,7 @@
         }
       }
     }
+
     .sliderContainer {
       margin-top: -15px;
       text-align: end;
@@ -93,7 +94,7 @@
         &::-webkit-slider-thumb {
           width: 20px;
           height: 20px;
-          margin-top: -5px;
+          transform: translateY(-5px);
         }
       }
 
