@@ -40,6 +40,7 @@ const Footer = () => {
         </div>
       </div>
 
+      {/*
       <div className={styles.businessColumn}>
         <div className={styles.title}>
           Empresa
@@ -83,8 +84,10 @@ const Footer = () => {
           Lorem ipsum
         </div>
       </div>
+      */}
 
       <div className={styles.column}>
+        {/*
         <div className={styles.title}>
           Se inscreva
         </div>
@@ -99,6 +102,7 @@ const Footer = () => {
             <Image src={email} alt='Email' />
           </div>
         </div>
+        */}
 
         <div className={styles.policy}>
           Política de Privacidade

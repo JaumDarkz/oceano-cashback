@@ -1,18 +1,23 @@
 .container {
   width: 100%;
-  height: 340px;
+  height: 260px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   background: white;
   overflow: hidden;
-  padding-bottom: 360px;
+  padding: 0px 40px;
 
   .column {
     width: 270px;
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
     gap: 20px;
+
+    &:last-child {
+      width: 170px;
+      align-items: center;
+    }
 
     .image {
       transition: 0.4s;

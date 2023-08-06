@@ -2,13 +2,19 @@
   width: 100%;
   height: 100vh;
 
+  .navbarContainer {
+    position: fixed;
+    width: 100%;
+  }
+
   .contentContainer {
     width: 100%;
-    height: 89%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
+    padding-top: 100px;
 
     .leftContainer {
       width: 600px;
