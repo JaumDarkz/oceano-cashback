@@ -7,6 +7,7 @@ import styles from './styles.module.scss'
 
 import close from '@/public/assets/icons/close.svg'
 import cart from '@/public/assets/icons/cart.svg'
+import BuyLoader from '../BuyLoader'
 
 interface CartState {
   onStateChange: (cartState: boolean) => void
@@ -16,10 +17,16 @@ const Cart = ({onStateChange}: CartState) => {
   const [cartState, setCartState] = useState(false)
 
   const [confirmPopup, setConfirmPopup] = useState(false)
+  const [loadingPopup, setLoadingPopup] = useState(false)
 
   const handleClose = () => {
     setCartState(false)
     onStateChange(false)
+  }
+
+  const handleConfirm = () => {
+    setLoadingPopup(true)
+    setConfirmPopup(false)
   }
 
   const [totalPoints, setTotalPoints] = useState(0)
@@ -120,11 +127,17 @@ const Cart = ({onStateChange}: CartState) => {
                 Cancel
               </div>
 
-              <div className={styles.confirm}>
+              <div className={styles.confirm} onClick={handleConfirm}>
                 Confirm
               </div>
             </div>
           </div>
+        </div>
+      }
+
+      {loadingPopup &&
+        <div className={styles.popupContainer}>
+          <BuyLoader />
         </div>
       }
     </>

@@ -11,7 +11,6 @@
   }
 
   .contentContainer {
-    height: 120%;
     display: flex;
     margin-top: 100px;
 
@@ -32,6 +31,7 @@
 
     .commerceContainer {
       width: 100%;
+      min-height: calc(100vh - 100px);
       display: flex;
       flex-direction: column;
       padding: 35px;

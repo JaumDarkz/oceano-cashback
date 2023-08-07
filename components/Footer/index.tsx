@@ -16,75 +16,7 @@ const Footer = () => {
         <div className={styles.image}>
           <Image src={logo} alt='Logo' width={160} />
         </div>
-
-        <div className={styles.description}>
-          Lorem ipsum dolor amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore.
-        </div>
-
-        <div className={styles.socialContainer}>
-          <div className={styles.social}>
-            <Image src={facebook} alt='Facebook' width={25} />
-          </div>
-
-          <div className={styles.social}>
-            <Image src={twitter} alt='Twitter' width={25} />
-          </div>
-
-          <div className={styles.social}>
-            <Image src={instagram} alt='Instagram' width={25} />
-          </div>
-
-          <div className={styles.social}>
-            <Image src={linkedin} alt='Linkedin' width={25} />
-          </div>
-        </div>
       </div>
-
-      {/*
-      <div className={styles.businessColumn}>
-        <div className={styles.title}>
-          Empresa
-        </div>
-
-        <div className={styles.option}>
-          Lorem ipsum
-        </div>
-
-        <div className={styles.option}>
-          Lorem ipsum
-        </div>
-
-        <div className={styles.option}>
-          Lorem ipsum
-        </div>
-
-        <div className={styles.option}>
-          Lorem ipsum
-        </div>
-      </div>
-
-      <div className={styles.businessColumn}>
-        <div className={styles.title}>
-          Empresa
-        </div>
-
-        <div className={styles.option}>
-          Lorem ipsum
-        </div>
-
-        <div className={styles.option}>
-          Lorem ipsum
-        </div>
-
-        <div className={styles.option}>
-          Lorem ipsum
-        </div>
-
-        <div className={styles.option}>
-          Lorem ipsum
-        </div>
-      </div>
-      */}
 
       <div className={styles.column}>
         {/*
@@ -110,6 +42,26 @@ const Footer = () => {
 
         <div className={styles.registered}>
           © 2023 Oceano
+        </div>
+      </div>
+
+      <div className={styles.column}>
+        <div className={styles.socialContainer}>
+          <div className={styles.social}>
+            <Image src={facebook} alt='Facebook' width={25} />
+          </div>
+
+          <div className={styles.social}>
+            <Image src={twitter} alt='Twitter' width={25} />
+          </div>
+
+          <div className={styles.social}>
+            <Image src={instagram} alt='Instagram' width={25} />
+          </div>
+
+          <div className={styles.social}>
+            <Image src={linkedin} alt='Linkedin' width={25} />
+          </div>
         </div>
       </div>
     </div>

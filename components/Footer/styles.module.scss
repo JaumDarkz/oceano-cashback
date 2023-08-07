@@ -1,23 +1,24 @@
 .container {
   width: 100%;
-  height: 260px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: #F9F9F9;
   overflow: hidden;
-  padding: 0px 40px;
+  padding: 0px 60px;
+  border-top: 1px solid #E9E9E9;
 
   .column {
-    width: 270px;
     display: flex;
-    flex-direction: column;
     gap: 20px;
 
     &:last-child {
       width: 170px;
       align-items: center;
     }
+
+    
 
     .image {
       transition: 0.4s;
@@ -104,10 +105,11 @@
       font-weight: 400;
       line-height: normal;
       user-select: none;
+      width: max-content;
     }
 
     .policy {
-      width: fit-content;
+      width: max-content;
       color: #637381;
       font-size: 15px;
       font-style: normal;
