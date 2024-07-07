@@ -1,0 +1,335 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.322);
+  z-index: 30;
+  position: fixed;
+
+  .popupContainer {
+    width: 890px;
+    height: 560px;
+    display: flex;
+
+    background: white;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+
+    .leftContainer {
+      width: 50%;
+      height: 100%;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+    }
+
+    .rightContainer {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+
+
+      .titleAndClose {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .close {
+          margin-top: 3px;
+
+          .image {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .filterLabels {
+        display: flex;
+        gap: 13px;
+
+        .label {
+          border-radius: 99px;
+          background: rgba(23, 81, 208, 0.25);
+          padding: 5px 10px;
+
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          color: #2C1DFE;
+        }
+      }
+
+      .description {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.05px;
+      }
+
+      .buttonsContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 10px;
+
+        .quantityContainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 10px;
+
+          .left {
+            .value {
+              display: flex;
+              flex-direction: column;
+
+              .title {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px; /* 250% */
+                letter-spacing: -0.05px;
+                color: rgba(10, 9, 11, 0.50);
+              }
+
+              .text {
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+            }
+          }
+
+          .right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .title {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 20px; /* 250% */
+              letter-spacing: -0.05px;
+              color: rgba(10, 9, 11, 0.50);
+            }
+
+            .quantity {
+              width: 100px;
+              height: 35px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border: solid 1px #E7E7E7;
+              border-radius: 3px;
+
+              .button {
+                width: 30px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.4s;
+                background: white;
+                color: black;
+                user-select: none;
+
+                &:first-child {
+                  border-right: 1px solid #E7E7E7;
+                }
+                &:last-child {
+                  border-left: 1px solid #E7E7E7;
+                }
+
+                &:hover {
+                  cursor: pointer;
+                  background: rgb(223, 223, 223);
+                }
+              }
+
+              .count {
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+
+        .couponContainer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: 1px solid rgba(0, 0, 0, 0.10);
+          padding-top: 10px;
+
+          .right {
+            .value {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+
+              .title {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px; /* 250% */
+                letter-spacing: -0.05px;
+                color: rgba(10, 9, 11, 0.50);
+              }
+
+              .text {
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+              }
+            }
+          }
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 20px; /* 250% */
+              letter-spacing: -0.05px;
+              color: rgba(10, 9, 11, 0.50);
+            }
+
+            .quantity {
+              width: 100px;
+              height: 35px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              border: solid 1px #E7E7E7;
+              border-radius: 3px;
+
+              .button {
+                width: 30px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.4s;
+                background: white;
+                color: black;
+                user-select: none;
+
+                &:first-child {
+                  border-right: 1px solid #E7E7E7;
+                }
+                &:last-child {
+                  border-left: 1px solid #E7E7E7;
+                }
+
+                &:hover {
+                  cursor: pointer;
+                  background: rgb(223, 223, 223);
+                }
+              }
+
+              .count {
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+              }
+            }
+
+            .desc {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 20px; /* 250% */
+              letter-spacing: -0.05px;
+              color: rgba(10, 9, 11, 0.50);
+            }
+          }
+        }
+
+        .buttons {
+          display: flex;
+          gap: 10px;
+
+          .button {
+            width: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background: var(--blue);
+            color: white;
+            padding: 10px;
+            border-radius: 7px;
+            transition: 0.4s;
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 142.857% */
+            letter-spacing: -0.05px;
+
+            &:hover {
+              cursor: pointer;
+              filter: brightness(0.8);
+            }
+          }
+
+          .buyNow {
+            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: 0.4s;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px; /* 166.667% */
+            letter-spacing: -0.05px;
+
+            &:hover {
+              cursor: pointer;
+              border: 1px solid #2C1DFE;
+              color: #2C1DFE;
+            }
+          }
+        }
+      }
+    }
+  }
+}

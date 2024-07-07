@@ -1,0 +1,197 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  .sidebarContainer {
+    position: fixed;
+    z-index: 1;
+  }
+
+  .contentContainer {
+    width: calc(100% - 230px);
+    margin-left: 230px;
+    display: flex;
+    flex-direction: column;
+
+    .separatorContainer {
+    display: flex;
+    gap: 35px;
+    margin: 25px;
+    }
+    
+    .columnContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .firstRow {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+
+        .profileContainer {
+          width: 250px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 25px;
+          gap: 10px;
+          border-radius: 10px;
+          border: 1px solid rgba(10, 9, 11, 0.10);
+
+          .profileImage {
+            max-width: 90px;
+            max-height: 90px;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+            .change {
+              position: absolute;
+              margin-left: -20px;
+              margin-top: 60px;
+            }
+          }
+
+          .name {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+          }
+
+          .number {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+
+          }
+        }
+
+        .infoContainer {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 25px;
+          border-radius: 10px;
+          border: 1px solid rgba(10, 9, 11, 0.10);
+
+          .title {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px
+          }
+
+          .nameInput {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .label {
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              margin-left: 4px;
+            }
+          }
+
+          .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+
+            .button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 8px 10px;
+              border-radius: 5px;
+              background: #3056D3;
+              color: white;
+              gap: 10px;
+              transition: 0.4s;
+
+              &:hover {
+                cursor: pointer;
+                filter: brightness(0.8);
+              }
+            }
+          }
+        }
+      }
+
+      .secondRow {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px solid rgba(10, 9, 11, 0.10);
+
+        .title {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30px;
+        }
+
+        .inputContainer {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          gap: 20px;
+
+          .input {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .label {
+              margin-left: 4px;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+        }
+
+        .buttons {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          gap: 10px;
+
+          .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 10px;
+            border-radius: 5px;
+            background: #3056D3;
+            color: white;
+            gap: 10px;
+            transition: 0.4s;
+
+            &:hover {
+              cursor: pointer;
+              filter: brightness(0.8);
+            }
+          }
+        }
+      }
+    }
+  }
+}

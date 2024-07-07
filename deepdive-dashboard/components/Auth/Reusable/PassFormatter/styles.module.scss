@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    .condition {
+      display: flex;
+      gap: 8px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      transition: 0.3s;
+
+      .text {
+        color: var(--gray);
+      }
+
+      .trueText {
+        color: #21A335;
+      }
+    }
+  }
+}

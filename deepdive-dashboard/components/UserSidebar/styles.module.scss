@@ -1,0 +1,132 @@
+.container {
+  width: 230px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #2C1DFE;
+  padding: 15px;
+  position: fixed;
+
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+
+    .img {
+      transition: 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(0);
+      }
+    }
+  }
+
+  .separatorContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .navigationContainer {
+      display: flex;
+      flex-direction: column;
+
+      .option {
+        .notChecked {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          width: 100%;
+          height: 45px;
+          color: white;
+          display: flex;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          padding: 10px 15px;
+          border-radius: 8px;
+
+          transition: 0.3s;
+
+          &:hover {
+            cursor: default;
+            background: #1446b3;
+          }
+
+          .arrow {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+        .checked {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin-left: 25px;
+          border-left: solid white 1px;
+
+          .type {
+            margin-left: 25px;
+            height: 42px;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: white;
+
+            :is(span) {
+              font-size: 14px;
+              font-weight: 700;
+            }
+
+            transition: 0.3s;
+
+            &:first-child {
+              margin-top: 15px;
+            }
+
+            &:hover {
+              cursor: pointer;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .logoutContainer {
+      display: flex;
+      flex-direction: column;
+
+      .option {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        color: white;
+        
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        transition: 0.3s;
+        
+        &:hover {
+          cursor: pointer;
+          background: #1446b3;
+        }
+
+        .text {
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+}

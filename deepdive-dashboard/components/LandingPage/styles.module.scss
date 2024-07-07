@@ -1,0 +1,401 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lexend', sans-serif;
+
+  .contentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .heroSection {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .centerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        text-align: center;
+        z-index: 10;
+
+        .title {
+          width: 860px;
+          color: #0A090B;
+          text-align: center;
+          font-family: Lexend;
+          font-size: 60px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 65px;
+
+          :is(span) {
+            color: #2C1DFE;
+
+          }
+        }
+
+        .description {
+          color: #4F4D55;
+          text-align: center;
+          font-family: Lexend;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        .button {
+          padding: 14px 32px;
+          background: #2C1DFE;
+          border-radius: 100px;
+          transition: 0.5s;
+
+          color: #FFF;
+          text-align: center;
+          font-family: Lexend;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px;
+
+          &:hover {
+            cursor: pointer;
+            background: white;
+            outline: 1px solid #2C1DFE;
+            color: #2C1DFE;
+          }
+        }
+      }
+
+      .businessContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+
+        .text {
+          color: #4F4D55;
+          text-align: center;
+          font-family: Lexend;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+        }
+
+        .businessRow {
+          display: flex;
+          gap: 50px;
+          z-index: 10;
+
+          .business {
+            transition: 0.3s;
+
+            &:hover {
+              filter: brightness(0);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .secondSection {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      background-image: url('../../public/assets/backgrounds/lpbg.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      .leftSide {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .textContainer {
+          width: 540px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          color: white;
+
+          .title {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+
+      .rightSide {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .gift {
+          :is(img) {
+          transform: translate(0, 180px);
+          z-index: 0;
+          }
+        }
+      }
+    }
+
+    .benefitsSection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50px;
+      padding-top: 50px;
+
+      .headContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .title {
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 65px;
+          margin-bottom: 20px;
+        }
+
+        .text {
+          width: 710px;
+          color: #4F4D55;
+          text-align: center;
+          font-family: Lexend;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          margin-bottom: 100px;
+        }
+      }
+
+      .cardContainer {
+        display: flex;
+        gap: 50px;
+
+        .card {
+          width: 348px;
+          padding: 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+
+          .iconContainer {
+
+            transform: scale(1.3);
+            margin-left: 20px;
+            margin-bottom: -30px;
+          }
+
+          .title {
+            color: #4F4D55;
+            font-family: Lexend;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          .boldDescription {
+            color: #0A090B;
+            font-family: Lexend;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+
+          .lightDescription {
+            color: #4F4D55;
+            font-family: Lexend;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .depositionsSection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .headContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .title {
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 65px;
+          margin-bottom: 20px;
+        }
+
+        .text {
+          width: 710px;
+          color: #4F4D55;
+          text-align: center;
+          font-family: Lexend;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+
+      .depositions {
+        width: 1480px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .deposition {
+          width: 400px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 20px;
+          border-radius: 10px;
+          background: #FFF;
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+
+          .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .right {
+              display: flex;
+              flex-direction: column;
+              gap: 6px;
+
+              .name {
+                color: #000;
+                font-family: Lexend;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+
+              .social {
+                color: #000;
+                font-family: Lexend;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 121.523%;
+              }
+            }
+          }
+
+          .text {
+            color: #0A090B;
+            font-family: Lexend;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          .date {
+            color: rgba(0, 0, 0, 0.50);
+            font-family: Lexend;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .faqSection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 104px;
+      background-image: url('../../public/assets/backgrounds/quotebg.svg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      .headContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .title {
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 65px;
+          margin-bottom: 20px;
+        }
+
+        .text {
+          width: 710px;
+          color: #4F4D55;
+          text-align: center;
+          font-family: Lexend;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+
+      .faqContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        @media (max-width: 1050px) {
+          width: 90%;
+        }
+
+        @media (max-width: 800px) {
+          margin-bottom: -100px;
+        }
+      }
+    }
+  }
+}

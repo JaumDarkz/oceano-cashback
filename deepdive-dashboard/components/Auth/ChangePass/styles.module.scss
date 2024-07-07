@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .logoContainer {
+    padding: 24px;
+
+    .logo {
+      transition: 0.5s;
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(0);
+      }
+    }
+  }
+
+  .emailContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contentContainer {
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      gap: 20px;
+
+      .title {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        letter-spacing: -0.96px;
+        margin-bottom: -10px;
+      }
+
+      .description {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.18px;
+        color: var(--gray);
+      }
+
+      .button {
+        background: var(--blue);
+        text-align: center;
+        padding: 10px 0px;
+        border-radius: 6px;
+        color: white;
+        transition: 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          filter: brightness(0.9);
+        }
+      }
+
+      .backLogin {
+        display: flex;
+        gap: 5px;
+
+        &:hover {
+          .arrow {
+            .icon {
+              cursor: pointer;
+              filter: brightness(0);
+            }
+          }
+        }
+
+        .text {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 550;
+          line-height: 20px;
+          letter-spacing: -0.02px;
+          color: var(--blue);
+
+          &:hover {
+            cursor: pointer;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px 24px 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    color: var(--gray);
+
+    .policy {
+      transition: 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        font-size: 16px;
+      }
+    }
+  }
+}

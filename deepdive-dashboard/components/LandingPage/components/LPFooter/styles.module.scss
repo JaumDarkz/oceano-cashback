@@ -1,0 +1,139 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .ctaContainer {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2C1DFE;
+
+    .cta{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      color: white;
+
+      .title {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      .text {
+        width: 540px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      .button {
+        background: white;
+        color: #2C1DFE;
+        padding: 14px 32px;
+        border-radius: 100px;
+        transition: 0.3s;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+
+        &:hover {
+          cursor: pointer;
+          color: white;
+          background: #2C1DFE;
+          outline: 1px solid white;
+        }
+      }
+    }
+  }
+
+  .footerContainer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+
+    .firstRow {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        transition: 0.3s;
+
+        &:hover {
+          cursor: pointer;
+          filter: brightness(100%);
+        }
+      }
+
+      .optionsContainer {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .line {
+          width: 1px;
+          height: 15px;
+          background: rgba(10, 9, 11, 0.20);
+        }
+
+        .option {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+          transition: 0.3s;
+
+          &:hover {
+            cursor: pointer;
+            font-size: 18px;
+            color: #2C1DFE;
+          }
+        }
+      }
+    }
+
+    .secondRow {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .rights {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+      }
+
+      .social {
+        display: flex;
+        gap: 25px;
+
+        .email {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 24px;
+        }
+
+        .socialButton {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

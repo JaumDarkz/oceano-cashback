@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  display: flex;
+
+  .sidebar {
+    position: fixed;
+  }
+
+  .contentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 230px;
+    margin-top: 100px;
+
+    .navbarContainer {
+      position: fixed;
+      top: 0;
+      width: calc(100% - 230px);
+    }
+
+    .historyContainer {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      padding: 25px;
+
+      .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+
+        .title {
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30px;
+        }
+
+        .subtitle {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+
+        .text {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+
+        .wallet {
+          width: fit-content;
+          min-width: 290px;
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          gap: 10px;
+          border-radius: 10px;
+          border: 1px solid rgba(10, 9, 11, 0.10);
+
+          .sal {
+            color: rgba(10, 9, 11, 0.50);
+
+            span {
+              color: #2C1DFE;
+              font-family: Lexend;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+        }
+
+        .charts {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+
+          .chart {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}

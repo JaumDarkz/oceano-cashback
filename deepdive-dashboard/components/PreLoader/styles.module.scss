@@ -1,0 +1,33 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-repeat: repeat;
+  background-size: 300px;
+  overflow: hidden;
+
+  .columnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .logoContainer {
+      animation: oscillate 2s ease-in forwards infinite;
+      transform: scale(1.2);
+    }
+  }
+}
+
+@keyframes oscillate {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 45%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
